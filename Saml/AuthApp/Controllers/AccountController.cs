@@ -14,6 +14,7 @@ using Saml;
 using System.Xml;
 using Microsoft.AspNetCore.Http;
 using System.Web;
+using AuthApp.Saml;
 
 //https://localhost:44365/Account
 
@@ -137,14 +138,15 @@ namespace AuthApp.Controllers
 
 
 
-            XmlDocument doc = Class2.SignXml(response.OuterXml, Class2.samlCertificate, Class2.privateKey);
+
+            XmlDocument doc = ResponseTool.SignXml(response.OuterXml, Settings.samlCertificate, Settings.privateKey);
 
 
 
 
 
 
-            string responseBase64 = Convert.ToBase64String(Class2.StringToByteArray(doc.OuterXml));
+            string responseBase64 = Convert.ToBase64String(ResponseTool.StringToByteArray(doc.OuterXml));
             string url = req.GetAssertionConsumerServiceURL();
             
 
