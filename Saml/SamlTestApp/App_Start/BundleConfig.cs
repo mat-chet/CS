@@ -9,6 +9,7 @@ namespace SamlTestApp
 {
     public class BundleConfig
     {
+
         // Дополнительные сведения об объединении см. на странице https://go.microsoft.com/fwlink/?LinkID=303951.
         public static void RegisterBundles(BundleCollection bundles)
         {

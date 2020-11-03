@@ -120,6 +120,7 @@ namespace OneLogin
 				LoadXml(enc.GetString(Convert.FromBase64String(response)));
 			}
 
+
 			public bool IsValid()
 			{
 				if (_xmlDoc == null)
