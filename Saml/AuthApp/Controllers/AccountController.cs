@@ -62,7 +62,7 @@ namespace AuthApp.Controllers
             {
                 model.Url = "localhost:44365";
             }
-            if(model.Email == "mat@mail.ru" && model.Password == "1234")
+            if(model.Email == "exmpl@mail.ru" && model.Password == "1234")
             {
                 /*User user = new User();
                 user.Email = model.Email;
