@@ -117,7 +117,7 @@ namespace AuthApp.Controllers
         }
         [Authorize]
         [HttpGet]
-        public IActionResult AuthReqest(AuthRequestModel model)
+        public IActionResult AuthRequest(AuthRequestModel model)
         {
             
             
